@@ -12,7 +12,9 @@ package com.test;
  */
 public class Fibonacci {
 	public static void main(String[] args) {
-		System.out.println(solution(21));
+		System.out.println(getRecursiveFibonacci(6));
+		System.out.println(getFibonacci(6));
+		System.out.println(solution(12));
 	}
 	
 	public static int solution(int n) {
@@ -41,7 +43,8 @@ public class Fibonacci {
 		}
 		
 		int val1, val2, result=0;
-		val1 = val2 = 1;
+		val1 = 0;
+		val2 = 1;
 		
 		for(int i=1; i<n; i++) {
 			result = val1 + val2;
@@ -52,4 +55,11 @@ public class Fibonacci {
 		return result;
 	}
 	
+	public static int getRecursiveFibonacci(int n) {
+		if(n == 0 || n == 1) {
+			return n;
+		}else {
+			return getRecursiveFibonacci(n-1) + getRecursiveFibonacci(n-2);
+		}
+	}
 }
