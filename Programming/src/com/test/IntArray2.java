@@ -19,7 +19,7 @@ import java.util.List;
 public class IntArray2 {
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4,5};
-		int k = 6;
+		int k = 108;
 		StringBuilder sb = new StringBuilder();
 		
 		solution(arr, k);
