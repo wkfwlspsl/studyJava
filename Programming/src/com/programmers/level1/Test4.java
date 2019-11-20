@@ -1,4 +1,9 @@
 package com.programmers.level1;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 /*
 	코딩테스트 연습 > 탐욕법(Greedy) > 체육복
 	
@@ -25,5 +30,58 @@ package com.programmers.level1;
 	3	[3]	[1]	2
 */
 public class Test4 {
+	public static void main(String[] args) {
+		System.out.println(solution(3, new int[] {3}, new int[] {1}));
+	}
+	
+	public static int solution(int n, int[] lost, int[] reserve) {
+        int[] students = new int[n];
+        setArray(lost, reserve, students);
+        
+        for(int i=0; i<students.length; i++) {
+        	// 잃어버렸으면 빌려오기
+        	if(students[i] == 0) {
+        		borrow(students, i);
+        	}
+        }
+        
+        List<Integer> stdList = Arrays.stream(students).boxed().collect(Collectors.toList());
+        stdList = stdList.stream().filter(s -> s > 0).collect(Collectors.toList());
+        return stdList.size();
+    }
 
+	// 학생별 체육복 현황 세팅
+	private static void setArray(int[] lost, int[] reserve, int[] students) {
+		Arrays.fill(students, 1);
+        for(int i=0; i<lost.length; i++) {
+        	students[lost[i]-1]--;
+        }
+        for(int i=0; i<reserve.length; i++) {
+        	students[reserve[i]-1]++;
+        }
+	}
+	
+	// 빌려오기
+	public static void borrow(int[] students, int myNo) {
+		int prevNo = myNo-1;
+		int nextNo = myNo+1;
+		
+		//앞에 학생 확인
+		if(prevNo >= 0) {
+			if(students[prevNo] == 2) {
+				students[prevNo]--;
+				students[myNo]++;
+				return ;
+			}
+		}
+		
+		//뒤에 학생 확인
+		if(nextNo < students.length) {
+			if(students[nextNo] == 2) {
+				students[nextNo]--;
+				students[myNo]++;
+				return;
+			}
+		}
+	}
 }
