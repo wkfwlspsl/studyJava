@@ -1,5 +1,7 @@
 package com.programmers.level1;
 
+import java.util.Arrays;
+
 /*
 	배열 array의 i번째 숫자부터 j번째 숫자까지 자르고 정렬했을 때, k번째에 있는 수를 구하려 합니다.
 	
@@ -28,11 +30,52 @@ package com.programmers.level1;
 */
 public class Test5 {
 	public static void main(String[] args) {
-		
+		int[] result = solution(new int[] {1, 5, 2, 6, 3, 7, 4}, new int[][] {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}});
+		for(int n : result) {
+			System.out.println(n);
+		}
 	}
 	
 	public static int[] solution(int[] array, int[][] commands) {
-        int[] answer = {};
+        int[] answer = new int[commands.length];
+        
+        for(int idx=0; idx<commands.length; idx++) {
+        	int[] command = commands[idx];
+        	int i=command[0], j=command[1], k=command[2];
+        	
+        	//index는 0부터 시작하므로 1빼고 줌
+        	int[] splitArr = getSplitArr(array, i-1,j-1);
+        	Arrays.sort(splitArr);
+        	answer[idx] = splitArr[k-1];
+        }
+        
         return answer;
     }
+	
+	public static int[] getSplitArr(int[] array, int startIdx, int endIdx) {
+		int[] splitArr = new int[endIdx-startIdx+1];
+		
+		for(int i=0; i<splitArr.length; i++) {
+			splitArr[i] = array[startIdx+i];
+		}
+		
+		return splitArr;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
