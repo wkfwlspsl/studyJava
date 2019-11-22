@@ -24,10 +24,10 @@ import java.util.stream.Collectors;
 	이때 이 학생은 체육복을 하나만 도난당했다고 가정하며, 남은 체육복이 하나이기에 다른 학생에게는 체육복을 빌려줄 수 없습니다.
 	
 	입출력 예
-	n	lost	reserve	return
+	n	lost	reserve		return
 	5	[2, 4]	[1, 3, 5]	5
-	5	[2, 4]	[3]	4
-	3	[3]	[1]	2
+	5	[2, 4]	[3]			4
+	3	[3]		[1]			2
 */
 public class Test4 {
 	public static void main(String[] args) {
