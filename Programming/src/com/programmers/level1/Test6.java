@@ -1,5 +1,7 @@
 package com.programmers.level1;
 
+import java.util.Arrays;
+
 /*
 	코딩테스트 연습 > 서머코딩/윈터코딩(~2018) > 예산
 	
@@ -41,5 +43,37 @@ package com.programmers.level1;
 	모든 부서의 물품을 구매해주면 10원이 됩니다. 따라서 최대 4개 부서의 물품을 구매해 줄 수 있습니다.
  */
 public class Test6 {
-
+	public static void main(String[] args) {
+		System.out.println(solution(new int[] {1,3,2,5,4}, 9));
+	}
+	
+	public static int solution(int[] d, int budget) {
+		int answer = 0;
+		int sum = 0;
+		
+		Arrays.sort(d);
+		for(int i=0; i<d.length; i++) {
+			sum += d[i];
+			if(sum > budget) {
+				break;
+			}else {
+				answer++;
+			}
+		}
+		return answer;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
