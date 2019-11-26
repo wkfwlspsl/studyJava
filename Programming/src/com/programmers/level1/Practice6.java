@@ -1,8 +1,6 @@
 package com.programmers.level1;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /*
 	코딩테스트 연습 > 연습문제 > 문자열 내 마음대로 정렬하기
@@ -36,21 +34,22 @@ import java.util.Map;
 public class Practice6 {
 	public static void main(String[] args) {
 		String[] answer = solution(new String[]{"sun", "bed", "car"}, 1);
+//		String[] answer = solution(new String[]{"abce", "abcd", "cdx"}, 2);
 		for(String s:answer) {
 			System.out.println(s);
 		}
 	}
 	
 	public static String[] solution(String[] strings, int n) {
-		String[] answer = {};
+		for(int i=0; i<strings.length; i++) {
+			strings[i] = "" + strings[i].charAt(n) + strings[i];
+		}
+		
 		Arrays.sort(strings);
 		
 		for(int i=0; i<strings.length; i++) {
+			strings[i] = strings[i].substring(1);
 		}
-		for(String s:strings) {
-			char c = s.charAt(n);
-		}
-		
-		return answer;
+		return strings;
 	}
 }
