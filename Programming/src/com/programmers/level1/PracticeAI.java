@@ -27,7 +27,7 @@ public class PracticeAI {
 			answer = false;
 		}else {
 			try {
-				int n = Integer.parseInt(s);
+				Integer.parseInt(s);
 			}catch(NumberFormatException e) {
 				answer = false;
 			}
