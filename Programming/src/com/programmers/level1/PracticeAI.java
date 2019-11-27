@@ -14,7 +14,7 @@ package com.programmers.level1;
 	a234	false
 	1234	true
  */
-public class Practice9 {
+public class PracticeAI {
 	public static void main(String[] args) {
 		System.out.println(solution("a234"));
 		System.out.println(solution("1234"));

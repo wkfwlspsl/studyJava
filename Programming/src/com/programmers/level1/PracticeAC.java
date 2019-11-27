@@ -30,7 +30,7 @@ import java.util.List;
 	문제의 예시와 같습니다.
  */
 
-public class Practice3 {
+public class PracticeAC {
 	public static void main(String[] arg) {
 		int[] result = solution(new int[] {1,1,3,3,0,1,1});
 		for(int n : result) {

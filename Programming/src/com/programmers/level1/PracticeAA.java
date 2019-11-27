@@ -24,7 +24,7 @@ import java.util.Map;
 	a	b	result
 	5	24	TUE
  */
-public class Practice1 {
+public class PracticeAA {
 	private static final Map<Integer, String> dayMap;
 	static {
 		dayMap = new HashMap<>();

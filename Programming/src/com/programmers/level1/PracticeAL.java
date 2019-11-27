@@ -14,7 +14,7 @@ package com.programmers.level1;
 	3	수박수
 	4	수박수박
  */
-public class Practice12 {
+public class PracticeAL {
 	public static void main(String[] args) {
 		System.out.println(solution(3));
 		System.out.println(solution(4));

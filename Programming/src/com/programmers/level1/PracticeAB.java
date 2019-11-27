@@ -14,7 +14,7 @@ package com.programmers.level1;
 	abcde	c
 	qwer	we
  */
-public class Practice2 {
+public class PracticeAB {
 	public static void main(String[] args) {
 		System.out.println(solution("abcde"));
 		System.out.println(solution("qwer"));

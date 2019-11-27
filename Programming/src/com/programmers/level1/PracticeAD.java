@@ -34,7 +34,7 @@ import java.util.List;
 	3, 2, 6은 10으로 나누어 떨어지지 않습니다. 나누어 떨어지는 원소가 없으므로 [-1]을 리턴합니다.
  */
 
-public class Practice4 {
+public class PracticeAD {
 	public static void main(String[] args) {
 		int[] result = solution2(new int[] {3,2,6}, 10);
 		for(int n:result) {

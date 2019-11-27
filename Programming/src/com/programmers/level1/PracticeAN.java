@@ -24,7 +24,7 @@ import java.util.List;
 	z		1	a
 	a B z	4	e F d
  */
-public class Practice14 {
+public class PracticeAN {
 	public static final List<Character> lowerList;
 	public static final List<Character> upperList;
 	static {

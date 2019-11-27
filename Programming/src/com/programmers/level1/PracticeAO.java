@@ -20,7 +20,7 @@ package com.programmers.level1;
 	입출력 예 #2
 	5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.
  */
-public class p {
+public class PracticeAO {
 	public static void main(String[] args) {
 		System.out.println(solution(0));
 		System.out.println(solution(1));
@@ -36,12 +36,12 @@ public class p {
 			return 0;
 		}
 		
-		for(int i=2; i<=n; i++) {
+		for(int i=2; i<=n/2; i++) {
 			if(n % i == 0) {
 				answer += i;
 			}
 		}
 		
-		return answer;
+		return answer + n;
 	}
 }

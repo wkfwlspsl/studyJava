@@ -15,7 +15,7 @@ package com.programmers.level1;
 	seoul		return
 	[Jane, Kim]	김서방은 1에 있다
  */
-public class Practice10 {
+public class PracticeAJ {
 	public static void main(String[] args) {
 		System.out.println(solution(new String[] {"Jane", "Kim"}));
 	}

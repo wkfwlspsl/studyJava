@@ -31,7 +31,7 @@ import java.util.Arrays;
 	따라서 정렬 후에는 cdx가 가장 뒤에 위치합니다. 
 	abce와 abcd는 사전순으로 정렬하면 abcd가 우선하므로, 답은 [abcd, abce, cdx] 입니다.
  */
-public class Practice6 {
+public class PracticeAF {
 	public static void main(String[] args) {
 		String[] answer = solution(new String[]{"sun", "bed", "car"}, 1);
 //		String[] answer = solution(new String[]{"abce", "abcd", "cdx"}, 2);

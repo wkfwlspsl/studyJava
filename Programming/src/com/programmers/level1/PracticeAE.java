@@ -17,7 +17,7 @@ package com.programmers.level1;
 	3	3	3
 	5	3	12
  */
-public class Practice5 {
+public class PracticeAE {
 	public static void main(String[] args) {
 		System.out.println(solution2(5, 3));
 	}

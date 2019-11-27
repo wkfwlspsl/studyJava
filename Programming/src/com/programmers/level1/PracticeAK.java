@@ -23,7 +23,7 @@ package com.programmers.level1;
 	입출력 예 #2
 	1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환
  */
-public class Practice11 {
+public class PracticeAK {
 	public static void main(String[] args) {
 		System.out.println(solution(10));
 		System.out.println(solution(5));

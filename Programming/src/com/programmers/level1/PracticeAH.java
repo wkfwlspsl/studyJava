@@ -17,7 +17,7 @@ import java.util.Comparator;
 	s		return
 	Zbcdefg	gfedcbZ
  */
-public class Practice8 {
+public class PracticeAH {
 	public static void main(String[] args) {
 		System.out.println(solution("Zbcdefg"));
 	}

@@ -26,7 +26,7 @@ package com.programmers.level1;
 	입출력 예 #2
 	'p'의 개수 1개, 'y'의 개수 2개로 다르므로 false를 return 합니다.
  */
-public class Practice7 {
+public class PracticeAG {
 	public static void main(String[] args) {
 		System.out.println(solution("pPoooyY"));
 		System.out.println(solution("Pyy"));
