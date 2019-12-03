@@ -38,8 +38,25 @@ public class PracticeAX {
 		System.out.println(solution(16));
 		System.out.println(solution(626331));
 	}
+	
 	public static int solution(int num) {
-		int answer = 0;
-		return answer;
+		int cnt=0;
+		long longN = num;
+		
+		while(true) {
+			if(cnt >= 500) {
+				return -1;
+			}
+			if(longN == 1) {
+				return cnt;
+			}
+			
+			cnt++;
+			if(longN%2==0) {
+				longN = longN/2;
+			}else {
+				longN = longN*3+1;
+			}
+		}
 	}
 }
