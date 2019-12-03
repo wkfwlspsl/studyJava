@@ -25,7 +25,7 @@ package com.programmers.level1;
 
 public class PracticeAW {
 	public static void main(String[] args) {
-		int[] result = solution(3, 12);
+		int[] result = solution(18, 8);
 		for(int n: result) {
 			System.out.println(n);
 		}
