@@ -1,4 +1,4 @@
-package com.test;
+package com.dailyProgramming;
 
 import java.util.LinkedList;
 import java.util.List;

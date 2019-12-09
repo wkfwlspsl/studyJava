@@ -2,10 +2,16 @@ package com.test;
 
 public class Temp {
 	public static void main(String[] args) {
-		System.out.println(tossQuiz(3000));
+		System.out.println(test(""));
+		System.out.println(test("zzz"));
+		System.out.println(test("zzzz"));
+		System.out.println(test("zzzzz"));
+		System.out.println(test("undefined"));
+		System.out.println(test(null));
 	}
 	
-	public static int tossQuiz(int n) {
-		return (int) (Math.random() * (n/100));
+	public static boolean test(String str) {
+		return str != null && str.length() >= 4 && !"undefined".equals(str);
 	}
+	
 }

@@ -1,4 +1,4 @@
-package com.test;
+package com.dailyProgramming;
 
 /*
 	정수 배열(int array)가 주어지면 이어지는 원소들의 합중 가장 큰값을 구하시오. 단, 시간복잡도는 O(n).
