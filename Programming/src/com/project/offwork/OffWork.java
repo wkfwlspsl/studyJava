@@ -12,7 +12,7 @@ import java.util.Locale;
  */
 public class OffWork {
 	public static void main(String[] args) throws ParseException {
-		System.out.println(solution("8:40",9));
+		System.out.println(solution("09:47",9));
 		
 	}
 	
